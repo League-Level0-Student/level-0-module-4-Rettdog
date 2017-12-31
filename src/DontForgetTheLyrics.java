@@ -20,17 +20,29 @@ public class DontForgetTheLyrics {
 	
 	public static void main(String[] args) {
 		// 4. Make a pop-up to explain the game.
-
+JOptionPane.showMessageDialog(null, "When the song stops, finish the verse.");
 		// 5. Use the playSound method to play your song.
-
+playSound("Eye of the Tiger.wav");
 		// 6. Make a pop-up for the player to type their answer.
-
+String ans = JOptionPane.showInputDialog("Finish the lyric");
 		// 7. If they answered correctly, tell them that they were right.
-
+if(ans.equals("fast")) {
+	JOptionPane.showMessageDialog(null, "Your right!");
+}else {
+	JOptionPane.showMessageDialog(null, "You are wrong. THe right answer was fast");
+}
 		// 8. Otherwise, tell them they are wrong, and give them the answer.
 
 		// 9. Record another sound and repeat steps 5-8.
-
+playSound("EyeoftheTiger2.wav");
+// 6. Make a pop-up for the player to type their answer.
+ ans = JOptionPane.showInputDialog("Finish the lyric");
+// 7. If they answered correctly, tell them that they were right.
+if(ans.equals("up to the challenge of our rival")) {
+JOptionPane.showMessageDialog(null, "Your right!");
+}else {
+JOptionPane.showMessageDialog(null, "You are wrong. The right answer was up to the challenge of our rival");
+}
 		// 10. [optional] Add a points variable that will calculate their final score.
 	}
 
